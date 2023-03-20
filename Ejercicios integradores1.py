@@ -22,12 +22,13 @@ class Persona():
         print ("Es menor")
 # ejercicio 7      
 class Cuenta(Persona):
-  def __init__(self,nombre, edad, titular, cantidad):
+  def __init__(self, titular, cantidad):
     self.__titular = Persona
     self.__cantidad = cantidad
   @property
   def titular(self):
     return "este es el titular {}".format(self.__titular)
+  @property
   def cantidad(self):
     return "su monto es{}".format(self.__cantidad) 
   @cantidad.setter
@@ -38,14 +39,14 @@ class Cuenta(Persona):
 def mostrar(self):
     for Cuenta in Cuenta:
       print (Cuenta)
-ingreso = ingreso
+ingreso = 8
 def ingresar (cantidad, ingreso):
   if ingreso >= 0:
     cantidad = cantidad + ingreso
     return cantidad
   else:
     print (cantidad)
-retiro = retiro
+retiro = 3
 def retirar(cantidad, retiro):
   cantidad = cantidad - retiro
   return cantidad
